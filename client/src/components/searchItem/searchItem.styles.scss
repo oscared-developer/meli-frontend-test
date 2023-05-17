@@ -1,0 +1,57 @@
+@import '../../styles/colors';
+@import '../../styles/layout';
+@import '../../styles/font';
+
+.item__container {
+  background: $meli-white-color;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;  
+  border-bottom: 1px solid $meli-secondary-color;
+
+  .item__body {
+    display: flex;
+    flex: 2;
+
+    .item__thumbnail  {
+      height: 180px;
+      border-radius: 4px;
+      padding: $spacer-16;
+  
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .item__price {
+      display:  flex;
+      font-size: $fz-24;
+      margin-top: $spacer-32;
+      margin-bottom: $spacer-32;
+      align-items: center;
+  
+      p {
+        margin-right: 10px;
+      }
+  
+      .item__shipping {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .item__title {
+      font-size: $fz-18;
+      width: 400px;
+      margin-bottom: $spacer-32;
+    }
+  }
+
+  .item__address {
+    flex: 1;
+    font-size: $fz-12;
+    color: $meli-grey-color;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+@import '../../styles/layout';
+@import '../../styles/font';
+
+.product-details__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $meli-white-color;
+  width: 75%;
+  margin: $spacer-32;
+
+}

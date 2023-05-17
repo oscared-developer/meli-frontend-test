@@ -1,0 +1,31 @@
+@import '../../styles/colors';
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color:$meli-primary-color;
+  
+  .header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 ;
+    padding: 10px 13%;
+
+    .header__logo {
+      margin-right: 25px;
+    }
+
+
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: $meli-secondary-color;
+  min-height: 95vh;
+}

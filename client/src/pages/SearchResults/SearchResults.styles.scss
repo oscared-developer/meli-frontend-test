@@ -1,0 +1,14 @@
+@import '../../styles/colors';
+@import '../../styles/layout';
+@import '../../styles/font';
+
+.results__container {
+ background-color: $meli-secondary-color; 
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 75%;
+ margin-top: 50px;
+}
+

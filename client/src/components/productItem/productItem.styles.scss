@@ -1,0 +1,70 @@
+@import '../../styles/colors';
+@import '../../styles/layout';
+@import '../../styles/font';
+
+
+.productItem__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .productItem__image {
+    flex: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    padding: $spacer-32;
+
+    img {
+      width: 680px;
+      height: 680px;
+      object-fit: contain;
+    }
+  }
+
+  .productItem__info {
+    .productItem__condition {
+      p {
+        font-size: $fz-14;
+        color: $meli-grey-color;
+        margin: $spacer-32 0 $spacer-16 0;
+      }
+    }
+
+    .productItem__title {
+      width: 400px;
+      font-size: $fz-24;
+      margin-bottom: $spacer-32;
+      padding-right: $spacer-32;
+    }
+
+    .productItem__price {
+      font-size: 46px;
+      margin-bottom: 46px;
+    }
+
+    .productItem__checkout_button {
+      background-color: $meli-blue-color;
+      color: $meli-white-color;
+      border: none;
+      border-radius: 4px;
+      width: 60%;
+      height: 45px;
+      margin-right: $spacer-32;
+    }
+  }
+}
+
+.productItem__description {
+  margin: $spacer-32;
+  .productItem__description_title {
+    margin-bottom: $spacer-32;
+    font-size: $fz-28;
+  }
+
+  .productItem__description_text {
+    font-size: $fz-16;
+    color: $meli-grey-color;
+   width: 65%;
+  }
+}
