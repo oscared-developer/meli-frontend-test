@@ -9,6 +9,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
+    setSearchTerm("");
     navigate("/");
   };
 

@@ -27,7 +27,7 @@
   
     .item__price {
       display:  flex;
-      font-size: $fz-24;
+      font-size: $font-24;
       margin-top: $spacer-32;
       margin-bottom: $spacer-32;
       align-items: center;
@@ -43,7 +43,7 @@
     }
 
     .item__title {
-      font-size: $fz-18;
+      font-size: $font-18;
       width: 400px;
       margin-bottom: $spacer-32;
     }
@@ -51,7 +51,7 @@
 
   .item__address {
     flex: 1;
-    font-size: $fz-12;
+    font-size: $font-12;
     color: $meli-grey-color;
   }
 }
