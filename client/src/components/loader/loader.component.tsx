@@ -3,7 +3,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 export const Loader = () => {
   return (
-    <div>
+    <div role="loader">
       <Skeleton height="80vh" width="80vw" highlightColor="#deb80d1c" />;
     </div>
   );
