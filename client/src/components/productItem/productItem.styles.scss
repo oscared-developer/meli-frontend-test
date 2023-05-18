@@ -3,12 +3,12 @@
 @import '../../styles/font';
 
 
-.productItem__details {
+.product {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
-  .productItem__image {
+  &__image {
     flex: 1;
     align-self: center;
     display: flex;
@@ -22,8 +22,8 @@
     }
   }
 
-  .productItem__info {
-    .productItem__condition {
+  &__info {
+    &-condition {
       p {
         font-size: $font-14;
         color: $meli-grey-color;
@@ -31,19 +31,19 @@
       }
     }
 
-    .productItem__title {
+    &-title {
       width: 400px;
       font-size: $font-24;
       margin-bottom: $spacer-32;
       padding-right: $spacer-32;
     }
 
-    .productItem__price {
+    &-price {
       font-size: 46px;
       margin-bottom: 46px;
     }
 
-    .productItem__checkout_button {
+    &-checkout {
       background-color: $meli-blue-color;
       color: $meli-white-color;
       border: none;
@@ -55,14 +55,14 @@
   }
 }
 
-.productItem__description {
+.product__description {
   margin: $spacer-32;
-  .productItem__description_title {
+  &-title {
     margin-bottom: $spacer-32;
     font-size: $font-28;
   }
 
-  .productItem__description_text {
+  &-text {
     font-size: $font-16;
     color: $meli-grey-color;
    width: 65%;

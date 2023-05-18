@@ -10,28 +10,27 @@ type Props = {
 export const ProductItem: FC<Props> = ({ details, description }) => {
   return (
     <>
-      <div className="productItem__details">
-        <div className="productItem__image">
-          <img src={details?.pictures[0]?.url} />
+      <div className="product">
+        <div className="product__image">
+          <img src={details?.pictures[0]?.url} alt="product image" />
         </div>
-        <div className="productItem__info">
-          <span className="productItem__condition">
+        <div className="product__info">
+          <span className="product__info-condition">
             <p>
-              {details?.condition} - {details?.sold_quantity} vendidos
+              {details?.condition === "new" ? "Nuevo " : "Usado "} -{" "}
+              {details?.sold_quantity} vendidos
             </p>
           </span>
-          <p className="productItem__title">{details?.title}</p>
-          <p className="productItem__price">${details?.price}</p>
-          <button className="productItem__checkout_button">comprar</button>
+          <p className="product__info-title">{details?.title}</p>
+          <p className="product__info-price">
+            ${details?.price.toLocaleString("es-AR")}
+          </p>
+          <button className="product__info-checkout">comprar</button>
         </div>
       </div>
-      <div className="productItem__description">
-        <p className="productItem__description_title">
-          Descripción del producto
-        </p>
-        <p className="productItem__description_text">
-          {description?.plain_text}
-        </p>
+      <div className="product__description">
+        <p className="product__description-title">Descripción del producto</p>
+        <p className="product__description-text">{description?.plain_text}</p>
       </div>
     </>
   );

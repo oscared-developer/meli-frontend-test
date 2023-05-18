@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { SearchBox } from "../../components";
 import logoIcon from "../../assets/img/Logo_ML.png";
+import Helmet from "react-helmet";
 import "./Home.styles.scss";
 
 const Home = () => {
@@ -25,10 +26,18 @@ const Home = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Meli | Inicio</title>
+        <meta name="description" content="pagina de inicio" />
+      </Helmet>
       <header className="header">
         <div className="header__container">
           <span onClick={() => handleNavigate()}>
-            <img className="header__logo" src={logoIcon} alt="ML logo" />
+            <img
+              className="header__container-logo"
+              src={logoIcon}
+              alt="ML logo"
+            />
           </span>
           <SearchBox
             value={searchTerm}

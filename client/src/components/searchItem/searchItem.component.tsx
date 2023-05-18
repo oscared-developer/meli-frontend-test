@@ -10,19 +10,23 @@ type Props = {
 
 export const SearchItem: FC<Props> = ({ item, onClick }) => {
   return (
-    <div className="item__container" onClick={() => onClick(item.id)}>
+    <div className="item" onClick={() => onClick(item.id)}>
       <div className="item__body">
-        <div className="item__thumbnail">
-          <img src={item.thumbnail} />
+        <div className="item__body-thumbnail">
+          <img src={item.thumbnail} alt="imagen" />
         </div>
         <div>
-          <div className="item__price">
-            <p>${item.price}</p>
+          <div className="item__body-price">
+            <p>${item.price.toLocaleString("es-AR")}</p>
             {item.shipping.free_shipping && (
-              <img src={shipping} alt="shipping" className="item__shipping" />
+              <img
+                src={shipping}
+                alt="shipping"
+                className="item__price-shipping"
+              />
             )}
           </div>
-          <div className="item__title">
+          <div className="item__body-title">
             <p>{item.title}</p>
           </div>
         </div>

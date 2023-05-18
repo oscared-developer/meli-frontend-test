@@ -18,7 +18,7 @@ export const SearchBox: FC<Props> = ({ value, onChange, handleSubmit }) => {
           onChange={onChange}
         />
         <button type="button">
-          <img src={searchIcon} />
+          <img src={searchIcon} alt="search" />
         </button>
       </span>
     </form>

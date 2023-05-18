@@ -4,7 +4,7 @@ export interface Item {
   shipping: {
     free_shipping: boolean;
   };
-  price: string;
+  price: number;
   title: string;
   address: {
     state_name: string;

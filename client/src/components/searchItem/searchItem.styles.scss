@@ -2,7 +2,7 @@
 @import '../../styles/layout';
 @import '../../styles/font';
 
-.item__container {
+.item {
   background: $meli-white-color;
   display: flex;
   justify-content: space-evenly;
@@ -10,22 +10,23 @@
   width: 100%;  
   border-bottom: 1px solid $meli-secondary-color;
 
-  .item__body {
+  &__body {
     display: flex;
     flex: 2;
 
-    .item__thumbnail  {
+    &-thumbnail  {
       height: 180px;
+      width: 180px;
       border-radius: 4px;
       padding: $spacer-16;
   
       img {
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
   
-    .item__price {
+    &-price {
       display:  flex;
       font-size: $font-24;
       margin-top: $spacer-32;
@@ -36,13 +37,13 @@
         margin-right: 10px;
       }
   
-      .item__shipping {
+      &-shipping {
         width: 16px;
         height: 16px;
       }
     }
 
-    .item__title {
+    &-title {
       font-size: $font-18;
       width: 400px;
       margin-bottom: $spacer-32;
