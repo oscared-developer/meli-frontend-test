@@ -1,5 +1,8 @@
 # MERCADO LIBRE - TEST FRONTED
 
+La aplicación consta de tres componentes principales: la caja de búsqueda, la visualización de resultados, y la descripción del detalle del producto.
+asi como de un backend para consumir los servicios de la api de mercado libre.
+
 ### Herramientas utilizadas
 
 #### FRONTEND
