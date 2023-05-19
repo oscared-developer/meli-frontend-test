@@ -43,3 +43,4 @@ asi como de un backend para consumir los servicios de la api de mercado libre.
 - Agregar linters.
 - Agregar conventionals commits.
 - Agregar git hooks.
+- Agregar variables de entorno.
