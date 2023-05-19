@@ -42,4 +42,4 @@ asi como de un backend para consumir los servicios de la api de mercado libre.
 - Agregar CI/CD en ambos projectos
 - Agregar linters.
 - Agregar conventionals commits.
-- Agregar git hooks
+- Agregar git hooks.
