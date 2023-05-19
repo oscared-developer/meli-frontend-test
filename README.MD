@@ -40,3 +40,6 @@ asi como de un backend para consumir los servicios de la api de mercado libre.
 
 - Agregar Test Unitarios en el backend.
 - Agregar CI/CD en ambos projectos
+- Agregar linters.
+- Agregar conventionals commits.
+- Agregar git hooks
