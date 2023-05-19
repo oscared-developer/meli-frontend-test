@@ -26,6 +26,7 @@ const Home = () => {
 
   return (
     <>
+      {/* Gracias a helmet podemos agrear el SEO a nuestra app, cambiando el titulo y la descripcion de cada pagina de nuestra app */}
       <Helmet>
         <title>Meli | Inicio</title>
         <meta name="description" content="pagina de inicio" />
@@ -47,6 +48,7 @@ const Home = () => {
         </div>
       </header>
       <div className="container">
+        {/* Este componente nos permite renderizar las rutas hijas en nuestra app */}
         <Outlet />
       </div>
     </>
